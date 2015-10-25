@@ -1,0 +1,95 @@
+\documentclass[10pt]{beamer}
+\usepackage{etex}
+\usetheme[
+%%% options passed to the outer theme
+%    progressstyle=fixedCircCnt,   %either fixedCircCnt, movCircCnt, or corner
+%    rotationcw,          % change the rotation direction from counter-clockwise to clockwise
+%    shownavsym          % show the navigation symbols
+  ]{AAUsimple}
+  
+% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+% Change the bar and sidebar colors:
+%\setbeamercolor{AAUsimple}{fg=red!20,bg=red}
+%\setbeamercolor{sidebar}{bg=red!20}
+% Change the color of the structural elements:
+%\setbeamercolor{structure}{fg=red}
+% Change the frame title text color:
+%\setbeamercolor{frametitle}{fg=blue}
+% Change the normal text color background:
+%\setbeamercolor{normal text}{fg=black,bg=gray!10}
+% ... and you can of course change a lot more - see the beamer user manual.
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+\usepackage{helvet}
+\usepackage{graphics}
+\usepackage{color}
+\usepackage[all]{xy}
+
+
+\usepackage{graphicx}
+\graphicspath{ {AAUgraphics/} }
+
+% colored hyperlinks
+\newcommand{\chref}[2]{%
+  \href{#1}{{\usebeamercolor[bg]{AAUsimple}#2}}%
+}
+
+\title{Genetic Algorithms}
+
+\subtitle{Intelligent searching based on Methaheuristics}  % could also be a conference name
+
+\date{2th Nobember 2015}
+
+\author{
+Petra Franjic \and
+Gustavo Puig
+}
+
+% - Give the names in the same order as they appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation. See the beamer manual for an example
+
+\institute[
+%  {\includegraphics[scale=0.2]{aau_segl}}\\ %insert a company, department or university logo
+%  Dept.\ of Electronic Systems\\
+%  Aalborg University\\
+%  Denmark
+] % optional - is placed in the bottom of the sidebar on every slide
+{% is placed on the bottom of the title page
+ Departamento de Inteligencia Artificial
+  
+  %there must be an empty line above this line - otherwise some unwanted space is added between the university and the country (I do not know why;( )
+}
+
+% specify a logo on the titlepage (you can specify additional logos an include them in 
+% institute command below
+\pgfdeclareimage[height=2.75cm]{titlepagelogo}{AAUgraphics/logocei.png} % placed on the title page
+\titlegraphic{% is placed on the bottom of the title page
+  \pgfuseimage{titlepagelogo}
+%  \hspace{1cm}\pgfuseimage{titlepagelogo2}
+}
+
+\setcounter{tocdepth}{1}
+
+\begin{document}
+% the titlepage
+{%\aauwavesbg%
+\begin{frame}[plain,noframenumbering] % the plain option removes the header from the title page
+  \titlepage
+\end{frame}}
+%%%%%%%%%%%%%%%%
+
+% TOC
+\begin{frame}{Index}{}
+\tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\section{whatever - to create the index}
+
+
+\end{document}
