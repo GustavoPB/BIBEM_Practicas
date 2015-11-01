@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class GA {
 	public Population population = null;
+	
 	public void intializePopulation(int pop_size){
 		population = new Population(pop_size);
 		for(Square sq: population.getIndividuals()){
@@ -34,7 +35,7 @@ public class GA {
 		}
 		
 		for(Square sq: population.getIndividuals()) {
-			sq.setPopulation(population);
+			sq.setPopulation(population);//graba las poblaciones en cada cuadrado
 		}
 		List<Square> oldPopulationIndividuals = oldPopulation.getIndividuals();
 		while(population.getSize() < oldPopulationSize) {

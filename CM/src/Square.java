@@ -109,8 +109,8 @@ public class Square {
 		int rank = population.getSize();
 		for (int i = 0; i < individuals.size(); i++){
 			if(individuals.get(i).getMaxNumberOfIdenticalSums() > this.getMaxNumberOfIdenticalSums()){
-				rank--;
-			}
+				rank--;//el rango pretende comparar como de bueno es un induividuo con respecto a los demas. Indica el numero de individuos que son peores soluciones que el mismo
+			}//cuanto mas grande sea el rango mejor solucion de la poblacion sera
 		}
 		return rank;
 	}

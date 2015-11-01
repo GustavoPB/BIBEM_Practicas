@@ -29,7 +29,7 @@ public class Population {
 	public List<Square> getBestIndividuals() {
 		List<Square> bestIndividuals = new ArrayList<Square>();
 		List<Square> population = getIndividuals();
-		int bestRank = population.get(0).getRank();
+		int bestRank = population.get(0).getRank();//consigo el rango del primero y lo comparo con el rango de cada individuo siempre quedandome con el mejor
 		for(int i = 1; i < population_size; i++){
 			if(population.get(i).getRank() > bestRank) {
 				bestRank = population.get(i).getRank();

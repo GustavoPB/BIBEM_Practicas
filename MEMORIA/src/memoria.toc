@@ -1,3 +1,16 @@
 \select@language {english}
-\contentsline {chapter}{Introduccion}{iii}{chapter*.6}
-\contentsline {chapter}{\numberline {1}Capitulo 1}{1}{chapter.1}
+\contentsline {chapter}{Introduccion}{iii}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Problem design}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}NSGA-II algorithm}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Outline of genetic algorithms}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Search components of the NSGA-II algorithm}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Dominance based ranking}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Crowding distance}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Elitism}{8}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Outline of the NSGA-II algorithm}{9}{section.2.3}
+\contentsline {section}{\numberline {2.4}Codification}{10}{section.2.4}
+\contentsline {section}{\numberline {2.5}Operators}{11}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}The crossover operator}{12}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}The mutation operator}{13}{subsection.2.5.2}
+\contentsline {chapter}{\numberline {3}Implementation}{15}{chapter.3}
+\contentsline {chapter}{\numberline {4}Conclusion}{17}{chapter.4}

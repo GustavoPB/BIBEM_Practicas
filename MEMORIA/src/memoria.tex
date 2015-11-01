@@ -43,7 +43,7 @@
 
 % Para incluir gráficos EPS => compilar con latex.
 \usepackage[dvips]{graphicx}
-\graphicspath{ {Graphics/} }
+%\graphicspath{ {Graphics/} }
 
 % Para escribir en color...
 %
@@ -167,7 +167,7 @@
 \setcounter{secnumdepth}{3}
 
 % Título
-\title{Tittle of the Memory}
+\title{Solving the magic square problem with the NSGA II genetic algorithm}
 % Autor
 \author{Petra Franjic \and Gustavo Puig}
 % Fecha
@@ -182,15 +182,20 @@
 	% 2. Hacernos una portada en LaTeX que cumpla las normas (menos arriesgado)
 	%
         \include{front_page}
+        
+        \newpage
+	$\ $
+	\thispagestyle{empty} % para que no se numere esta pagina
 
 	% Los proyectos de fin de carrera de FIC han de ir acompañados de una serie de documentos adicionales, algunos
 	% 	de ellos obligatorios (certificado, resumen, lista de palabras clave) y otros opcionales (dedicatoria
 	%	y agradecimientos).
 	%
+	\setcounter{page}{1}
         \include{summary}
-        \include{key_words}
-        \include{dedicatory}
-        \include{gratitude}
+        %\include{key_words}
+        %\include{dedicatory}
+        %\include{gratitude}
 
 
 	% FRONTMATTER: TOC, LOF, LOT y descripción/organización de la memoria.
@@ -207,12 +212,20 @@
 	% MAINMATTER: El contenido, capítulo a capítulo, de la memoria del PFC.
         \mainmatter
 
-	\include{chapter_01}
-	%\include{pfc_main_020}
-	%\include{pfc_main_030}
-	%\include{pfc_main_040}
-	%\include{pfc_main_050}
-	%\include{pfc_main_060}
+	\include{./chapters/2_problem_design}
+	\include{./chapters/3_NSGA_ii_algorithm}
+	\include{./chapters/3.1_outline_ga}
+	\include{./chapters/3.2_search_components}
+	\include{./chapters/3.2.1_dominance_based_ranking}
+	\include{./chapters/3.2.2_crowding_distance}
+	\include{./chapters/3.2.3_elitism}
+	\include{./chapters/3.3_outline_nsga_ii}
+	\include{./chapters/3.4_codification}
+	\include{./chapters/3.5_operators}
+	\include{./chapters/3.5.1_crossover}
+	\include{./chapters/3.5.2_mutation}
+	\include{./chapters/4_implementation}
+	\include{./chapters/5_conclusion}
 
 
 	\backmatter

@@ -36,20 +36,24 @@ public class Main {
 		geneticAlgorithm.printPopulation();
 		System.out.println("****");
 	
+	//------Bucle generador	- ejecucion del algoritmo
 		int nr_iterations = 0;
-		while(nr_iterations < max_nr_iterations){
-			if(geneticAlgorithm.stopCondition()) {
+		while(nr_iterations < max_nr_iterations){//iteraccion por iteraccion
+			if(geneticAlgorithm.stopCondition()) {//se para antes si encuentra el optimo
 				break;
 			}
 			geneticAlgorithm.renewPopulation();
 //			geneticAlgorithm.printPopulation();
 			nr_iterations++;
 		}
+		
 		geneticAlgorithm.printPopulation();
 		List<Square> squaresSatisfy = new ArrayList<Square>();
 		System.out.println();
 		geneticAlgorithm.printPopulation();
 		System.out.println("Solutions:");
+		
+		//No funciona
 		for (Square sq: squaresSatisfy) {
 			System.out.println(sq);
 		}
