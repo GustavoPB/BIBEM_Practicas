@@ -1,2 +1,6 @@
 \subsection[The mutation operator]{\label{identificadorReferenciaCruzada}
 The mutation operator}
+
+\ \ The mutation operators for combinatorial optimization problems like the magic square have to respect certain constraints. They can never generate numbers out of the 1 to $n^2$ range and each of the numbers in the range may be present only once. This limits the mutation to various permutation operators.
+
+The permutation operator that was used in the algorithm was a swap mutation. It randomly selects a position in the square and then randomly selects another position in the same row or column as the first position that was selected. It then exchanges values held at the two positions.

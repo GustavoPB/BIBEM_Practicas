@@ -1,2 +1,10 @@
 \section[Codification]{\label{identificadorReferenciaCruzada}
 Codification}
+
+\ \ Two types of codification can be used to represent points in the solution space, binary and non-binary codification. Generally it can?t be said that one codification is better than the other, as it depends on the problem that is being dealt with.
+
+Considering the design of the assigned problem, we have decided to use non- binary integer codification as the more simple and straightforward of the two possible codification. An additional reason against binary coded solutions was the fact that the magic square is a combinatorial optimization problem, which imposes a set of constraints on the possible solutions. By applying common crossover and mutation operators on bit strings it would be very difficult to respect the given constraint that the numbers should stay in the 1 to $n^2$ range, or that each of the numbers in the square should appear only once.
+
+It is interesting to note the duality in the viewpoint of variables and values for this particular problem as was expressed in [6]. The array of numbers for codifying the square could be considered as either codifying the problem of finding the number to go in each cell of the square, or deciding which cell to put each number in. We have decided to go with the first approach since the constraints on the row and column sums are much easier to express.
+
+

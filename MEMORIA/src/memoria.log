@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.9.20)  1 NOV 2015 20:00
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.9.20)  1 NOV 2015 23:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -501,8 +501,9 @@ File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(./memoria.aux (./front_page.aux) (./summary.aux) (./intro.aux)
-(./chapters/2_problem_design.aux) (./chapters/3_NSGA_ii_algorithm.aux
+(./memoria.aux (./front_page.aux) (./summary.aux) (./key_words.aux)
+(./intro.aux) (./chapters/2_problem_design.aux)
+(./chapters/3_NSGA_ii_algorithm.aux
 
 LaTeX Warning: Label `identificadorReferenciaCruzada' multiply defined.
 
@@ -550,11 +551,15 @@ LaTeX Warning: Label `identificadorReferenciaCruzada' multiply defined.
 
 LaTeX Warning: Label `identificadorReferenciaCruzada' multiply defined.
 
+) (./chapters/4.1_moea_frame.aux
+
+LaTeX Warning: Label `identificadorReferenciaCruzada' multiply defined.
+
 ) (./chapters/5_conclusion.aux
 
 LaTeX Warning: Label `identificadorReferenciaCruzada' multiply defined.
 
-))
+) (./chapters/6_Biblio.aux))
 \openout1 = `memoria.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 177.
@@ -575,7 +580,8 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 177.
 LaTeX Font Info:    ... okay on input line 177.
 \AtBeginShipoutBox=\box61
 Package hyperref Info: Link coloring ON on input line 177.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -606,10 +612,7 @@ File: ./Graphics/logocei.eps Graphic file (type eps)
 ]
 \openout2 = `summary.aux'.
 
- (./summary.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ (./summary.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -618,7 +621,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2
 
-]) [3] [4
+]
+\openout2 = `key_words.aux'.
+
+ (./key_words.tex) [3
+
+
+] [4
 
 
 ] (./memoria.toc)
@@ -634,31 +643,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Missing character: There is no � in font cmr10!
+) [3]
+[4
 
- [3]
-Missing character: There is no í in font cmr10!
-)
-[4]
+
+]
 \openout2 = `./chapters/2_problem_design.aux'.
 
  (./chapters/2_problem_design.tex
 Chapter 1.
-) [1
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
-
-
-]
+])
+[2]
 \openout2 = `./chapters/3_NSGA_ii_algorithm.aux'.
 
- (./chapters/3_NSGA_ii_algorithm.tex [2
+ (./chapters/3_NSGA_ii_algorithm.tex
+Chapter 2.
+) [3
 
 
 
 ]
-Chapter 2.
-) [3]
 \openout2 = `./chapters/3.1_outline_ga.aux'.
 
  (./chapters/3.1_outline_ga.tex) [4
@@ -673,27 +685,34 @@ Chapter 2.
 ]
 \openout2 = `./chapters/3.2.1_dominance_based_ranking.aux'.
 
- (./chapters/3.2.1_dominance_based_ranking.tex) [6
+ (./chapters/3.2.1_dominance_based_ranking.tex
+File: ./Graphics/Figure1.eps Graphic file (type eps)
+ <./Graphics/Figure1.eps>)
+[6
 
 
 ]
 \openout2 = `./chapters/3.2.2_crowding_distance.aux'.
 
-
-(./chapters/3.2.2_crowding_distance.tex) [7
+ (./chapters/3.2.2_crowding_distance.tex
+File: ./Graphics/Figure2.eps Graphic file (type eps)
+ <./Graphics/Figure2.eps>) [7
 
 
 ]
 \openout2 = `./chapters/3.2.3_elitism.aux'.
 
- (./chapters/3.2.3_elitism.tex)
-[8
+
+(./chapters/3.2.3_elitism.tex
+File: ./Graphics/Figure3.eps Graphic file (type eps)
+ <./Graphics/Figure3.eps>) [8
 
 
 ]
 \openout2 = `./chapters/3.3_outline_nsga_ii.aux'.
 
- (./chapters/3.3_outline_nsga_ii.tex) [9
+
+(./chapters/3.3_outline_nsga_ii.tex) [9
 
 
 ]
@@ -733,52 +752,76 @@ Chapter 2.
 ]
 Chapter 3.
 ) [15]
+\openout2 = `./chapters/4.1_moea_frame.aux'.
+
+ (./chapters/4.1_moea_frame.tex) [16
+
+
+]
+\openout2 = `./chapters/4.2_performance.aux'.
+
+ (./chapters/4.2_performance.tex)
+[17
+
+
+]
 \openout2 = `./chapters/5_conclusion.aux'.
 
- (./chapters/5_conclusion.tex [16
+ (./chapters/5_conclusion.tex [18
 
 
 
 ]
 Chapter 4.
-) [17] [18
+) [19]
+\openout2 = `./chapters/6_Biblio.aux'.
 
-
-] (./memoria.bbl (./memoria.brf)
-\tf@brf=\write6
-\openout6 = `memoria.brf'.
-
+ (./chapters/6_Biblio.tex
+./chapters/6_Biblio.tex:20: Missing $ inserted.
+<inserted text> 
+                $
+l.20 [8] https://en.wikipedia.org/wiki/Magic_
+                                             square.
+? 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 243.
- [19
+./memoria.tex:231: Missing $ inserted.
+<inserted text> 
+                $
+l.231 ^^I\include{./chapters/6_Biblio}
+                                      
+? 
+[20
+
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 243.
- (./memoria.aux
-(./front_page.aux) (./summary.aux) (./intro.aux)
-(./chapters/2_problem_design.aux) (./chapters/3_NSGA_ii_algorithm.aux)
-(./chapters/3.1_outline_ga.aux) (./chapters/3.2_search_components.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+ (./memoria.aux (./front_page.aux) (./summary.aux) (./key_words.aux)
+(./intro.aux) (./chapters/2_problem_design.aux)
+(./chapters/3_NSGA_ii_algorithm.aux) (./chapters/3.1_outline_ga.aux)
+(./chapters/3.2_search_components.aux)
 (./chapters/3.2.1_dominance_based_ranking.aux)
 (./chapters/3.2.2_crowding_distance.aux) (./chapters/3.2.3_elitism.aux)
 (./chapters/3.3_outline_nsga_ii.aux) (./chapters/3.4_codification.aux)
 (./chapters/3.5_operators.aux) (./chapters/3.5.1_crossover.aux)
 (./chapters/3.5.2_mutation.aux) (./chapters/4_implementation.aux)
-(./chapters/5_conclusion.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 243.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 243.
+(./chapters/4.1_moea_frame.aux) (./chapters/4.2_performance.aux)
+(./chapters/5_conclusion.aux) (./chapters/6_Biblio.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 246.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 243.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
  ) 
 Here is how much of TeX's memory you used:
- 11649 strings out of 493706
- 165335 string characters out of 6145769
- 251272 words of memory out of 5000000
- 14737 multiletter control sequences out of 15000+600000
+ 11673 strings out of 493706
+ 165915 string characters out of 6145769
+ 247669 words of memory out of 5000000
+ 14738 multiletter control sequences out of 15000+600000
  11195 words of font info for 39 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 36i,11n,47p,1241b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,47p,1181b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on memoria.pdf (28 pages).
+Output written on memoria.pdf (29 pages).

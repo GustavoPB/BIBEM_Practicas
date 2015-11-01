@@ -1,2 +1,35 @@
+\providecommand{\abs}[1]{\lvert#1\rvert}
+
 \chapter[Problem design]{\label{identificadorReferenciaCruzada}
 Problem design}
+
+\ \ To use NSGA-II to solve the problem of the magic square, it was required to set up the magic square problem as a constraint satisfaction multi-objective problem. We imposed two constraints on the problem and 9 optimization goals which followed proposed solutions for similar problems, like Sudoku puzzle solving [7].
+
+By the nature of the magic square each number between 1 and $n^2$ has to appear in the square exactly once. This rule was imposed with the two mentioned constraints. The  first constraint maintained that the sum of all of the numbers in the square is equal to $0.5 * n^2 * (n^2 + 1)$, or, in the particular case of a $4 x 4$ magic square, to the sum of all numbers from 1 to 16. The second constraint maintained that the product of all numbers in the square equals to $(n^2)!$, or in the particular case of a $4 x 4$ magic square, to $16!$. The constraints in algebraic form:
+
+\begin{equation}
+\frac{n^{2}(n^{2} +1)}{2} - \sum_{i}^n \sum_{j}^n x_{i,j} = 0
+\end{equation}
+
+\begin{equation}
+(n^2)! - \prod_{i}^{n} \prod_{j}^{n} x_{i,j} = 0
+\end{equation}
+
+To guide the algorithm towards optimal solutions, it was necessary to use additional knowledge about the problem. The additional knowledge that we took into account was that considering a magic square with dimension n, the sum in each of the sub-blocks (rows, columns, diagonal) equals $0.5 * n * (n^2 + 1)$ [8]. This consideration was necessary because only those sub-blocks which sum to this value can contribute to an optimal solution. It is not enough, for an example, to consider as better those solutions for which can be said only that they have more of these sub- blocks summing to the same value. The functions that were being minimized in algebraic form:
+
+\begin{equation}
+f_{1}(x) = \abs{\frac{n(n^2+1)}{2}-\sum_{j}^n x_{1,j}}
+\end{equation}
+\begin{center}
+...
+\end{center}
+\begin{equation}
+f_{5}(x) = \abs{\frac{n(n^2+1)}{2}-\sum_{i}^n x_{i,1}}
+\end{equation}
+\begin{center}
+...
+\end{center}
+\begin{equation}
+f_{9}(x) = \abs{\frac{n(n^2+1)}{2}-\sum_{i}^n x_{i,j}}
+\end{equation}
+

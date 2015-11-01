@@ -1,2 +1,10 @@
 \subsection[The crossover operator]{\label{identificadorReferenciaCruzada}
 The crossover operator}
+
+\ \ The crossover operator that was used can be described as a larger scale uniform crossover. Two versions of the crossover were used, one that worked by recombining the rows of the parents, and the other that recombined the columns. Each was applied with equal probability. This alternation was necessary because passing on rows or columns from the parents to the children could be equally beneficial.
+
+The workings of the crossover can be described as follows, for the case of rows, and the explanation is analogous for the columns. First a mask of zeros and ones is formed, with the same length as is the number of rows. For each position in the mask, the symbol defines from which parent the row will be taken to form the child. Next a child is generated according to the scheme. For an example, mask 1010 means that the first and third row will be taken from the first parent and the second and fourth row from the second parent. Each of the symbols has an equal probability of being generated which means that the child will inherit approximately half of the rows from the first parent and half from the second.
+
+Although a gene is considered a single position in the square, we have decided against applying the crossover operator on this scale. The reason is that the sub-blocks (rows and columns) are the smallest units where beneficial changes could occur that we would like to get passed on to the children. In other words, if the sum of the numbers in one of the rows is equal to the target value, we wouldn?t want a crossover operator to break the row.
+
+The chosen crossover operator can generate infeasible solutions, where any of the numbers from 1 to $n^2$ is present more than once in the square, and some of them do not appear at all. As was discussed with the design of the problem, these solutions are marked as violating the constraints of the problem and are not further considered.
